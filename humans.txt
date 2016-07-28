@@ -1,0 +1,12 @@
+/*~~ TEAM ~~*/
+
+    Web Developer: Max Azarcon
+    Contact: max [at] sevenagesdesign.com
+    Twitter: @max_azarcon
+    From: Raleigh, NC, USA
+
+/*~~ SITE ~~*/
+
+    Platform: Ubuntu Linux, Windows 10, Mac OS X
+    Doctype: HTML5
+    Software: Sublime Text, Brackets, FileZilla, Photoshop
