@@ -9,8 +9,203 @@
  */
 
 
+/**
+ * Global CSS
+ */
+
+a,a:link,a:hover,a:visited {
+    outline: none !important;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+div.content {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 32px 0;
+    transition: .25s ease;
+}
+
+header {
+    height: 96px;
+    position: fixed;
+    width: 100%;
+    background: white;
+    transition: .25s ease;
+}
+
+header:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
+header .brand {
+    display: inline-block;
+}
+
+.brand img {
+    height: 100%;
+    width: auto;
+}
+
+div#main {
+    padding-top: 96px;
+}
 
 /**
  * Primary CSS
  */
- 
+
+/* Sticky Header */
+
+header.sticky {
+    height: 64px;
+    transition: .25s ease;
+}
+
+header.sticky div.content {
+    padding: 11px 0;
+    transition: .25s ease;
+}
+
+header.sticky .brand {
+    height: 50%;
+    transition: .25s ease;
+}
+
+#mobile-nav.sticky {
+    top: 64px;
+    transition: top .25s ease;
+}
+
+/* Top Navigation */
+
+nav.main-nav {
+    float: right;
+    display: inline-block;
+    height: 100%;
+}
+
+nav > ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Mobile Navigation */
+
+#mobile-nav-toggle {
+    width: 32px;
+    height: 5px;
+    display: inline-block;
+    float: right;
+    position: relative;
+    transform: rotate(45deg);
+    display: none;
+    transition: transform .25s ease;
+}
+
+#mobile-nav-toggle.open {
+    transform: rotate(0deg);
+    transition: transform .25s ease;
+}
+
+#mobile-nav-toggle:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: black;
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+#mobile-nav-toggle:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: black;
+    bottom: 0px;
+    transform: rotate(45deg);
+}
+
+nav#mobile-nav {
+    display: none;
+}
+
+/* Top Div */
+
+div#top {
+    background: #27A3D7;
+    padding: 5%;
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer .brand img {
+    height: 20px;
+}
+
+footer .social {
+    float: right;
+    display: inline-block;
+}
+
+footer .social img {
+    height: 25px
+}
+
+footer .copyright {
+    font-size: 12px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 900px) {
+    #mobile-nav-toggle {
+        display: inline-block;
+        margin: 16px 0 0 0;
+    }
+    
+    nav.main-nav {
+        display: none;
+    }
+    
+    nav#mobile-nav {
+        position: fixed;
+        width: 100%;
+        top: 96px;
+        background: grey;
+        text-align: center;
+        transition: top .25s ease;
+    }
+    
+    #mobile-nav li {
+        margin: 0 10px;
+    }
+    
+    footer .social {
+        float: none;
+        display: block;
+    }
+    
+    footer .copyright {
+        display: block;
+    }
+}
