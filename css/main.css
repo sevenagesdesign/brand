@@ -8,14 +8,30 @@
  * Import Fonts
  */
 
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 
 /**
  * Global CSS
  */
 
-a,a:link,a:hover,a:visited {
+* {
+    font-family: 'Roboto';
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway';
+}
+
+a,a:link,a:visited {
     outline: none !important;
     text-decoration: none;
+    font-family: 'Roboto';
+    color: #797979;
+}
+
+a:hover {
+    color: #27A3D7;
 }
 
 body {
@@ -29,6 +45,7 @@ div.content {
     max-width: 1200px;
     margin: auto;
     padding: 32px 0;
+    -webkit-transition: .25s ease;
     transition: .25s ease;
 }
 
@@ -37,6 +54,7 @@ header {
     position: fixed;
     width: 100%;
     background: white;
+    -webkit-transition: .25s ease;
     transition: .25s ease;
 }
 
@@ -49,11 +67,15 @@ header:after {
 
 header .brand {
     display: inline-block;
+    font-family: 'Raleway';
+    font-size: 32px;
+    line-height: 32px;
 }
 
 .brand img {
     height: 100%;
     width: auto;
+    vertical-align: bottom;
 }
 
 div#main {
@@ -68,21 +90,25 @@ div#main {
 
 header.sticky {
     height: 64px;
+    -webkit-transition: .25s ease;
     transition: .25s ease;
 }
 
 header.sticky div.content {
     padding: 11px 0;
+    -webkit-transition: .25s ease;
     transition: .25s ease;
 }
 
 header.sticky .brand {
     height: 50%;
+    -webkit-transition: .25s ease;
     transition: .25s ease;
 }
 
 #mobile-nav.sticky {
     top: 64px;
+    -webkit-transition: top .25s ease;
     transition: top .25s ease;
 }
 
@@ -104,6 +130,17 @@ nav > ul > li {
     padding: 10px;
 }
 
+nav.main-nav>ul>li.active,
+nav.main-nav>ul>li:hover{
+    background: #7a7a7a;
+    border-radius: 5px
+}
+
+nav.main-nav>ul>li.active>a,
+nav.main-nav>ul>li:hover>a{
+    color: white;
+}
+
 /* Mobile Navigation */
 
 #mobile-nav-toggle {
@@ -112,14 +149,22 @@ nav > ul > li {
     display: inline-block;
     float: right;
     position: relative;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     display: none;
+    -webkit-transition: -webkit-transform .25s ease;
+    transition: -webkit-transform .25s ease;
     transition: transform .25s ease;
+    transition: transform .25s ease, -webkit-transform .25s ease;
 }
 
 #mobile-nav-toggle.open {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transition: -webkit-transform .25s ease;
+    transition: -webkit-transform .25s ease;
     transition: transform .25s ease;
+    transition: transform .25s ease, -webkit-transform .25s ease;
 }
 
 #mobile-nav-toggle:before {
@@ -130,6 +175,7 @@ nav > ul > li {
     width: 100%;
     background: black;
     top: 0px;
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -141,6 +187,7 @@ nav > ul > li {
     width: 100%;
     background: black;
     bottom: 0px;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -175,6 +222,10 @@ div#top {
 }
 
 
+div#top img {
+    width: 50%;
+}
+
 /* Footer */
 
 footer .brand img {
@@ -195,7 +246,7 @@ footer .copyright {
     display: inline-block;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 975px) {
     #mobile-nav-toggle {
         display: inline-block;
         margin: 16px 0 0 0;
@@ -211,6 +262,7 @@ footer .copyright {
         top: 96px;
         background: grey;
         text-align: center;
+        -webkit-transition: top .25s ease;
         transition: top .25s ease;
     }
     

@@ -14,13 +14,13 @@ jQuery(function($) {
     
     // Set Top Div Height
     
-    $('div#top').css('height', winheight * 5.65);
+    $('div#top').css('height', winheight * 0.65);
     
     $(window).resize(function(){
         var winheight = $(this).height(),
             navheight = $('header').height();
         
-        $('div#top').css('min-height', winheight * 5.65);
+        $('div#top').css('min-height', winheight * 0.65);
     });
     
     $(window).on('scroll', function(e){
