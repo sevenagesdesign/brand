@@ -32,7 +32,7 @@
     <div class="content">
         <div class="brand">
             <a href="index.html">
-                <img id="header-logo" src="img/brand/seven-ages-logo-linear.png" />
+                <img id="header-logo" src="img/brand/seven-ages-logo-linear.png" /> Branding Guidelines
             </a>
         </div>
         <div id="mobile-nav-toggle">
@@ -48,7 +48,7 @@
 <div id="main">
     <div id="top">
         <div class="content">
-    
+            <img src="img/brand/seven-ages-logo.png">
         </div>
     </div>
 </div>
