@@ -1,5 +1,5 @@
 <ul>
-    <li class="active"><a href="#">Nav 1</a></li>
-    <li><a href="#">Nav 2</a></li>
-    <li><a href="#">Nav 3</a></li>
+    <a class="active" href="#"><li>Logo</li></a>
+    <a href="#colors"><li>Colors</li></a>
+    <a href="#fonts"><li>Fonts</li></a>
 </ul>

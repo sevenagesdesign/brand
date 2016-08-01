@@ -28,33 +28,21 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-<header>
-    <div class="content">
-        <div class="brand">
-            <a href="index.html">
-                <img id="header-logo" src="img/brand/seven-ages-logo-linear.png" /> Branding Guidelines
-            </a>
-        </div>
-        <div id="mobile-nav-toggle">
-        </div>
-        <nav class="main-nav">
-            <?php include('parts/nav.php'); ?>
-        </nav>
-    </div>
-</header>
-<nav id="mobile-nav">
-    <?php include('parts/nav.php'); ?>
-</nav>
+<?php include('parts/header.php'); ?>
+
 <div id="main">
     <div id="top">
         <div class="content">
             <img src="img/brand/seven-ages-logo.png">
+            <p>We are a digital branding agency based out of Raleigh, North Carolina. We are artists, we are nerds, and we are entrepreneurs.</p>
+            <h2>These are our branding guidelines.</h2>
+            <p>They are the standards that put us ahead of the game, and the cornerstone that makes our work worthy of your brand.</p>
         </div>
     </div>
     
-    <div id="colors">
+    <section id="colors">
         <div class="content">
-            <h1>Our colors are</h1>
+            <h1>Our Colors</h1>
             <table>
                 <tr id="colortable">
                     <td class="colortable" style="background-color: #29ABE1;">
@@ -66,18 +54,59 @@
                 </tr>
                 <tr>
                     <td>
-                        #29ABE1
+                        Pantone 2915 C<br>
+                        RGB 39, 163, 215<br>
+                        CMYK 82, 24, 0, 16<br>
+                        #27A3D7
                     </td>
                     <td>
+                        Pantone 425 C<br>
+                        RGB 94, 94, 94<br>
+                        CMYK 0, 0, 0, 63<br>
                         #5E5E5E
                     </td>
                     <td>
+                        Pantone Cool Gray 4 C<br>
+                        RGB 183, 183, 183<br>
+                        CMYK 0, 0, 0, 28<br>
                         #B7B7B7
                     </td>
                 </tr>
             </table>
         </div>
-    </div>
+    </section>
+    
+    <section id="fonts">
+        <div class="content">
+            <h1 class="section-title">Our Fonts</h1>
+            <div class="container">
+                <div class="half ralewayfont">
+                    <h2 class="section-title">Raleway</h2>
+                    <div class="content">
+                        <p>Raleway is our chosen font for titles, headers, quote attributions, etc. It isn't used in the body of a page, unless it's an address.</p>
+                        <hr>
+                        <h1>H1 Title Text</h1>
+                        <h2>H2 Title Text</h2>
+                        <h3>H3 Title Text</h3>
+                        <h4>H4 Title Text</h4>
+                        <h5>H5 Title Text</h5>
+                        <h6>H6 Title Text</h6>
+                    </div>
+                </div>
+                <div class="half robotofont">
+                    <h2 class="section-title" style="font-family: Roboto;">Roboto</h2>
+                    <div class="content">
+                        <p>Roboto is what we use for any other text, be it paragraphs, comments, quotes, and anything else that isn't a title.</p>
+                        <hr>
+                        <blockquote>
+                            <p>Heard about that, did you? Yes, I went out for a pint or two. What of it?</p>
+                            <span>Jarl Balgruuf, Whiterun</span>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 
@@ -86,16 +115,16 @@
 <footer>
     <div class="content">
         <div class="brand">
-            <img src="img/brand/seven-ages-logo-linear.png">
+            <a href="#"><img src="img/brand/seven-ages-logo-linear.png"></a>
         </div>
         <div class="social">
             <nav class="social-nav">
                 <ul>
-                    <li><a href="#"><img src="img/social/facebook.png"></a></li>
-                    <li><a href="#"><img src="img/social/twitter.png"></a></li>
-                    <li><a href="#"><img src="img/social/youtube.png"></a></li>
-                    <li><a href="#"><img src="img/social/vimeo.png"></a></li>
-                    <li><a href="#"><img src="img/social/instagram.png"></a></li>
+                    <li><a href="https://www.facebook.com/sevenagesdesign" target="_blank"><img src="img/social/facebook.png"></a></li>
+                    <li><a href="https://twitter.com/sevenagesdesign" target="_blank"><img src="img/social/twitter.png"></a></li>
+                    <li><a href="https://www.youtube.com/user/SevenAgesDesign" target="_blank"><img src="img/social/youtube.png"></a></li>
+                    <li><a href="https://vimeo.com/sevenagesdesign" target="_blank"><img src="img/social/vimeo.png"></a></li>
+                    <li><a href="https://www.instagram.com/sevenagesdesign/" target="_blank"><img src="img/social/instagram.png"></a></li>
                 </ul>
             </nav>
         </div>

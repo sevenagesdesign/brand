@@ -14,7 +14,7 @@ jQuery(function($) {
     
     // Set Top Div Height
     
-    $('div#top').css('height', winheight * 0.65);
+    $('div#top').css('min-height', winheight * 0.65);
     
     $(window).resize(function(){
         var winheight = $(this).height(),
@@ -22,6 +22,23 @@ jQuery(function($) {
         
         $('div#top').css('min-height', winheight * 0.65);
     });
+    
+    // Set fluid scroll
+    
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 64
+                }, 1000);
+                return false;
+            }
+        }
+    });
+    
+    // Sticky Navigation
     
     $(window).on('scroll', function(e){
         var top = $(this).scrollTop();
