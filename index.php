@@ -51,6 +51,33 @@
     
         </div>
     </div>
+    
+    <div id="colors">
+        <div class="content">
+            <h1>Our colors are</h1>
+            <table>
+                <tr id="colortable">
+                    <td class="colortable" style="background-color: #29ABE1;">
+                    </td>
+                    <td class="colortable" style="background-color: #5E5E5E;">
+                    </td>
+                    <td class="colortable" style="background-color: #B7B7B7">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        #29ABE1
+                    </td>
+                    <td>
+                        #5E5E5E
+                    </td>
+                    <td>
+                        #B7B7B7
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>
 
 

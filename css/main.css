@@ -156,6 +156,24 @@ div#top {
     text-align: center;
 }
 
+/* Color Table */
+
+#colors {
+    text-align: center;
+}
+
+#colors table {
+    width: 100%;
+}
+
+#colors table td:not(.colortable) {
+    padding: 32px 0;
+}
+
+.colortable {
+    height: 192px;
+}
+
 
 /* Footer */
 
