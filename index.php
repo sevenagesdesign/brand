@@ -40,6 +40,23 @@
         </div>
     </div>
     
+    <section id="logo">
+        <div class="content">
+            <h1 class="section-title">The Seven Ages Logo</h1>
+            <p>At Seven Ages, we believe brand is everything. One of the greatest branding assets you have is your logo. It's so great, in fact, that we have two! Here's the scoop.</p>
+            <div class="content">
+                <h2 class="section-title">The Minimal</h2>
+                <img src="img/brand/seven-ages-logo-guide.png">
+                <p>The minimal logo is used for small application. Business card headers, website navigation bars, document footers, etc. Without it, we'd have a big old logo hogging up the space we could use for great content delivery! That wouldn't be very practical, so something small and concise works much better for anything that doesn't require a large image.</p>
+            </div>
+            <div class="content">
+                <h2 class="section-title">The Big One</h2>
+                <img src="img/brand/seven-ages-logo-blue.png">
+                <p>For most other application, we use a larger logo. This is used in website headers, business card backgrounds, window decals, and the like. Anything that calls for something large and attention getting - that's where this one goes.</p>
+            </div>
+        </div>
+    </section>
+    
     <section id="colors">
         <div class="content">
             <h1>Our Colors</h1>
@@ -99,9 +116,10 @@
                         <p>Roboto is what we use for any other text, be it paragraphs, comments, quotes, and anything else that isn't a title.</p>
                         <hr>
                         <blockquote>
-                            <p>Heard about that, did you? Yes, I went out for a pint or two. What of it?</p>
-                            <span>Jarl Balgruuf, Whiterun</span>
+                            <p>I'm not a robot without emotions. I'm not what you see. I've come to help you with your problems, so we can be free!</p>
+                            <span>Styx, Mr. Roboto</span>
                         </blockquote>
+                        <p>Paragraphs are all written in the Roboto font - including this one! Doesn't that look nice?</p>
                     </div>
                 </div>
             </div>
