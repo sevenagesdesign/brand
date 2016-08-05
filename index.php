@@ -1,3 +1,7 @@
+<?php
+    $URL = dirname($_SERVER["REQUEST_URI"]);
+?>
+
 <!doctype html>
 <!--[if lt IE 7]>
     <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="">
@@ -54,6 +58,9 @@
                 <img src="img/brand/seven-ages-logo-blue.png">
                 <p>For most other application, we use a larger logo. This is used in website headers, business card backgrounds, window decals, and the like. Anything that calls for something large and attention getting - that's where this one goes.</p>
             </div>
+        </div>
+        <div class="readmore">
+            <a href="<?php echo($URL); ?>/logos">Read more about our logo</a>
         </div>
     </section>
     
